@@ -1,10 +1,7 @@
 <template>
   <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center row">
-    <div class="col-md-6 pt-3">
+    <div class="col-md-12 pt-3">
       <CreatePostComponent />
-    </div>
-    <div class="col-md-4">
-      Ads
     </div>
   </div>
 </template>
