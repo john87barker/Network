@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import { computed, onMounted } from '@vue/runtime-core'
-import { AppState } from '../AppState'
-import Pop from '../utils/Notifier'
+// import { computed, onMounted } from '@vue/runtime-core'
+// import { AppState } from '../AppState'
+// import Pop from '../utils/Notifier'
 
 export default {
   name: 'Home',
