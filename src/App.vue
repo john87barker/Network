@@ -1,13 +1,18 @@
 <template>
-  <header>
-    <Navbar />
-  </header>
-  <main>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <h1>login componenent eventually</h1>
+      </div>
+      <div class="col-9">
+        <Navbar />
     <router-view />
+      </div>
+    </div>
   </main>
   <footer>
     <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
+      
     </div>
   </footer>
 </template>
