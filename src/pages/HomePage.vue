@@ -1,6 +1,11 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <h1>This is going to be 'The Network'</h1>
+  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center row">
+    <div class="col-md-6 pt-3">
+      <CreatePostComponent />
+    </div>
+    <div class="col-md-4">
+      Ads
+    </div>
   </div>
 </template>
 
@@ -8,13 +13,16 @@
 // import { computed, onMounted } from '@vue/runtime-core'
 // import { AppState } from '../AppState'
 // import Pop from '../utils/Notifier'
+import CreatePostComponent from '../components/CreatePostComponent.vue'
 
 export default {
   name: 'Home',
   setup() {
 
+  },
+  components: {
+    CreatePostComponent
   }
-
 }
 </script>
 

@@ -27,13 +27,6 @@ import { AppState } from '../AppState'
 export default {
   name: 'Home',
   setup() {
-    // onMounted(async() => {
-    //   try {
-    //     await profileService.getProfile()
-    //   } catch (error) {
-    //     Pop.toast(error, 'error')
-    //   }
-    // })
     return {
       account: computed(() => AppState.user)
     }
