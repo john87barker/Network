@@ -4,7 +4,7 @@
       <div class="col-3">
         <h1>login componenent eventually</h1>
       </div>
-      <div class="col-9">
+      <div class="col-9 pr-0">
         <Navbar />
         <router-view />
       </div>
