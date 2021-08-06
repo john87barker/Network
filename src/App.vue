@@ -6,13 +6,12 @@
       </div>
       <div class="col-9">
         <Navbar />
-    <router-view />
+        <router-view />
       </div>
     </div>
   </main>
   <footer>
     <div class="bg-dark text-light text-center p-4">
-      
     </div>
   </footer>
 </template>
