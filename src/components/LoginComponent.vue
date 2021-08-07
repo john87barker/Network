@@ -1,12 +1,14 @@
 <template>
   <div class="LoginComponent">
-    <div class="row bg-primary vh-100">
+    <div class="row bg-primary vh-100 pl-3">
       <!-- vmodel -->
-      <div class="col-12 d-flex justify-content-center pt-4 ">
+      <div class="col-12 d-flex justify-content-center pt-4 pl-0">
         <img :src="account.picture" alt="" class="rounded-circle">
       </div>
       <div>
-        <h4>{{ account.name }}</h4>
+        <h4 class="pt-3">
+          {{ account.name }}
+        </h4>
         <p><small>class of</small></p>
       </div>
       <div>
