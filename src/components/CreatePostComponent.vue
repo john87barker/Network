@@ -23,12 +23,12 @@ import { AppState } from '../AppState'
 // import Pop from '../utils/Notifier'
 
 export default {
-  props: {
-    post: {
-      type: Object,
-      required: true
-    }
-  },
+  // props: {
+  //   post: {
+  //     type: Object,
+  //     required: true
+  //   }
+  // },
   setup() {
     return {
       account: computed(() => AppState.account)

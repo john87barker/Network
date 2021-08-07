@@ -4,7 +4,8 @@
       <CreatePostComponent />
     </div>
     <div class="col-12 pt-3">
-      <ThreadComponent :posts="posts" />
+      <!-- NOTE fix this -->
+      <!-- <ThreadComponent :posts="posts" /> -->
     </div>
   </div>
 </template>
@@ -31,7 +32,10 @@ export default {
       posts: computed(() => AppState.posts)
     }
   },
-  components: { CreatePostComponent, ThreadComponent }
+  components: {
+    CreatePostComponent
+  // ThreadComponent
+  }
 }
 </script>
 

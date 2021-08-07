@@ -5,11 +5,13 @@ import { api } from './AxiosService'
 
 class PostService {
   // NOTE pass in an object to set the queries with key value pairs
-  async getAll() {
+  async getAll(query = {}) {
     // NOTE convertToQuery will take an object and turn it into a queryString
-    const res = await api.get('api/posts')
+    const res = await api.get('api/posts' + convertToQuery(query))
     logger.log(res.data)
     AppState.posts = res.data
+    logger.log('This is the post material', AppState.posts)
+    // NOTE goes through the entire function but will not post to page. Function is good.
   }
 
   async createPost(post) {

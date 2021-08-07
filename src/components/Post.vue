@@ -1,8 +1,9 @@
 <template>
   <div class="component row">
-    <div class="col-md-10 offset-1  card bg-grey ml-5 pt-3 mt-3">
+    <div>
       <div class="d-flex justify-content-center ">
         <img :src="account.picture" alt="" class="rounded pic mt-3 mr-3">
+        <p>In the post?</p>
         <p>{{ account.name }}</p>
         <p>{{ posts.body }}</p>
         <button type="button" class="btn btn-outline my-2">
