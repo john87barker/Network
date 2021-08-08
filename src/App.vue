@@ -24,28 +24,20 @@ import { computed, onMounted } from 'vue'
 import { AppState } from './AppState'
 import LoginComponent from './components/LoginComponent.vue'
 import AdComponent from './components/AdComponent.vue'
-import Pop from './utils/Notifier'
-import { adsService } from './services/AdsService'
+// import Pop from './utils/Notifier'
+// import { adsService } from './services/AdsService'
 // import { accountService } from './services/AccountService'
-import { logger } from './utils/Logger'
+// import { logger } from './utils/Logger'
 
 export default {
   name: 'App',
   props: {
     ads: {
-      type: Array,
+      type: Object,
       required: true
     }
   },
   setup(props) {
-    onMounted(async() => {
-      logger.log('YAY, This is Mounted')
-      try {
-        await adsService.getAll()
-      } catch (error) {
-        Pop.toast(error, 'error')
-      }
-    })
     return {
       appState: computed(() => AppState),
       components: {

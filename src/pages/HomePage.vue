@@ -5,7 +5,7 @@
     </div>
     <div class="col-12 pt-3">
       <!-- NOTE fix this -->
-      <!-- <ThreadComponent :posts="posts" /> -->
+      <ThreadComponent />
     </div>
   </div>
 </template>
@@ -33,8 +33,7 @@ export default {
     }
   },
   components: {
-    CreatePostComponent
-  // ThreadComponent
+    CreatePostComponent, ThreadComponent
   }
 }
 </script>

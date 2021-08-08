@@ -14,9 +14,9 @@ class PostService {
     // NOTE goes through the entire function but will not post to page. Function is good.
   }
 
-  async getAllById(query = {}) {
+  async getAllById(id) {
     // NOTE convertToQuery will take an object and turn it into a queryString
-    const res = await api.get('api/posts' + convertToQuery(query))
+    const res = await api.get('api/posts/' + id)
     logger.log(res.data)
     AppState.posts = res.data
     // logger.log('This is the post material', AppState.posts)
@@ -25,6 +25,7 @@ class PostService {
 
   async createPost(post) {
     const res = await api.post('api/posts', post)
+    console.log(res.data)
     await this.getAll()
   }
 
