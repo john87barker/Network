@@ -1,20 +1,20 @@
 <template>
   <div class="LoginComponent">
-    <div class="row bg-primary vh-100 pl-3">
+    <div class="row bg-dark vh-100 pl-3">
       <!-- vmodel -->
-      <div class="col-12 d-flex justify-content-center pt-4 pl-0">
-        <img :src="account.picture" alt="" class="rounded-circle">
+      <div class="col-md-12 d-flex justify-content-center mt-4 pl-0 pb-0">
+        <img :src="account.picture" alt="" class="rounded-circle img">
       </div>
       <div>
-        <h4 class="pt-3">
-          {{ account.name }}
+        <h4 class=" col-md-12">
+          {{ account.nickname }}
         </h4>
-        <p><small>class of</small></p>
       </div>
-      <div>
-        <p>{{ account.bio }}</p>
-        <p>LinkedIn</p>
-        <p>Resume</p>
+      <div class="col-md-12 pt-3 ">
+        <p>{{ account.email }}</p>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <br>
+        <a href="https://www.linkedin.com/home" target="_blank">LinkedIn</a>
       </div>
     </div>
   </div>
@@ -38,5 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.img{
+  height: 150px
+}
 </style>
