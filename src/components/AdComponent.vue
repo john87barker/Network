@@ -27,7 +27,7 @@ export default {
     title: {
       type: String,
       required: true,
-      default: 'None'
+      default: 'No title for this ad'
     },
     banner: {
       type: String,
@@ -35,7 +35,7 @@ export default {
     },
     linkUrl: {
       type: String,
-      default: 'NA'
+      default: 'No link given'
     },
     square: {
       type: String,

@@ -1,5 +1,5 @@
 <template>
-  <div class="Thread col-md-10 offset-1 card bg-grey ml-5 pt-3 mt-3">
+  <div class="Thread col-md-10 offset-1 card bg-grey ml-5 pt-3 mt-3 mb-3">
     <!-- NOTE v-for="p in posts" :key="p.id" :post="p" does not work here... -->
     <Post />
   </div>

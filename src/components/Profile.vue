@@ -1,5 +1,5 @@
 <template>
-  <div class="row mb-5">
+  <div class="row mb-3">
     <!-- <div class="profile col-md-10 offset-1 card bg-grey ml-5 pt-3 mt-3"> -->
     <div class="card Profile col-md-10  bg-grey ml-5 pt-3 mt-3" style="width: 18rem;">
       <img :src="account.coverImg" class="card-img-top" alt="...">
@@ -25,8 +25,8 @@
           </div>
         </div>
         <!-- </span> -->
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vitae alias ad iusto debitis animi obcaecati, voluptatum quod quae delectus et totam, repellat nesciunt, soluta officia numquam porro ratione? Dolorem!
+        <p class="ml-3">
+          {{ account.bio || 'No bio made by the user' }}
         </p>
         <div class="d-flex justify-content-end">
           <button type="button" class="btn btn-outline my-2">
