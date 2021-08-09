@@ -1,5 +1,8 @@
 <template>
   <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center row">
+    <!-- <div class="col-12 pt-3">
+      <Profile />
+    </div> -->
     <div class="col-12 pt-3">
       <CreatePostComponent />
     </div>
@@ -17,6 +20,7 @@ import Pop from '../utils/Notifier'
 import { postService } from '../services/PostService'
 import CreatePostComponent from '../components/CreatePostComponent.vue'
 import ThreadComponent from '../components/ThreadComponent.vue'
+// import Profile from '../components/Profile.vue'
 
 export default {
   name: 'Home',
@@ -34,6 +38,7 @@ export default {
   },
   components: {
     CreatePostComponent, ThreadComponent
+    // Profile
   }
 }
 </script>

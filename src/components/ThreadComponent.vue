@@ -10,7 +10,7 @@
 export default {
   name: 'Thread',
   props: {
-    posts: {
+    post: {
       type: Object,
       required: true
     }

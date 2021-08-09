@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-3 ads card bg-grey">
-    <!-- NOTE the following shows up on the screen with the defaults I gave in the props. As soon as I add the following v-for(whether on the adComponent or the ap.vue) it disappears.  'v-for="a in ads" :key="a.id" :ad="a"' -->
+  <div class="mt-3 Ads card bg-grey">
+    <!-- NOTE the following shows up on the screen with the defaults I gave in the props. As soon as I add the following v-for(whether on the adComponent or the app.vue) it disappears.  'v-for="a in ads" :key="a.id" :ad="a"' -->
     Ads go here
     <h3 class="ad_title">
       {{ title }}
