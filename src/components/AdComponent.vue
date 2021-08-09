@@ -53,7 +53,7 @@ export default {
       }
     })
     return {
-      account: computed(() => AppState.account)
+      ad: computed(() => AppState.ads)
     }
   }
 }
