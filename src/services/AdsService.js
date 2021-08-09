@@ -9,7 +9,7 @@ class AdsService {
     // NOTE convertToQuery will take an object and turn it into a queryString
     const res = await api.get('api/ads')
     logger.log(res.data)
-    AppState.posts = res.data
+    AppState.ads = res.data
   }
 }
 

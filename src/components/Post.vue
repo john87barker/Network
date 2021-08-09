@@ -17,10 +17,7 @@
         </div>
         <br>
         <div class=" text-left p-0 m-0 pt-1">
-          <p>{{ body }}</p>
-          <!-- <p class="p-0 m-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt perferendis alias sit iusto odit id, atque asperiores quam corporis sunt voluptas, nobis maxime natus ad aut dignissimos suscipit officia?
-          </p> -->
+          <p>{{ post.body }}</p>
         </div>
         <div class="d-flex justify-content-end">
           <button type="button" class="btn btn-outline my-2">
@@ -36,36 +33,31 @@
 <script>
 import { computed } from '@vue/runtime-core'
 import { AppState } from '../AppState'
-import Pop from '../utils/Notifier'
-import { postService } from '../services/PostService'
+// import Pop from '../utils/Notifier'
+// import { postService } from '../services/PostService'
 
 export default {
+  name: 'Posts',
   props: {
-    posts: {
+    post: {
       type: Object,
       required: true
-    },
-    body: {
-      type: String,
-      required: true,
-      default: 'No \'body\' wants to show'
     }
   },
   setup(props) {
     return {
-
       account: computed(() => AppState.account),
-      post: computed(() => AppState.posts),
-      async destroy() {
-        try {
-          if (await Pop.confirm()) {
-            await postService.destroy(props.posts.id)
-            Pop.toast('deleted', 'success')
-          }
-        } catch (error) {
-          Pop.toast(error, 'error')
-        }
-      }
+      posts: computed(() => AppState.posts)
+      // async destroy() {
+      //   try {
+      //     if (await Pop.confirm()) {
+      //       await postService.destroy(props.posts.id)
+      //       Pop.toast('deleted', 'success')
+      //     }
+      //   } catch (error) {
+      //     Pop.toast(error, 'error')
+      //   }
+      // }
     }
   }
 }
